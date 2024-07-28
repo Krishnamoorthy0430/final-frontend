@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.table-container {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Center the table and add space around it */
+  border-collapse: collapse; /* Collapses borders to avoid double borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the table */
+}
+
+.table-container table {
+  width: 100%; /* Make the table full width of its container */
+  border: 2px solid #007bff; /* Border around the table */
+  border-radius: 8px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensures rounded corners work well */
+}
+
+.table-container th, .table-container td {
+  padding: 12px 15px; /* Padding inside cells */
+  text-align: left; /* Align text to the left in cells */
+  border: 2px solid #423e3e; /* Light gray border inside cells */
+}
+
+.table-container th {
+  background-color: #007bff; /* Header background color */
+  color: white; /* Header text color */
+  font-weight: bold; /* Make header text bold */
+  text-transform: uppercase; /* Uppercase header text for emphasis */
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+.table-container tr:hover {
+  background-color: #a2c9f1; /* Slightly darker background on hover */
+}
+
+.table-container td:first-child {
+  border-left: 2px solid #423e3e; /* Border on the left of the first column */
+}
+
+.table-container td:last-child {
+  border-right: 2px solid #423e3e; /* Border on the right of the last column */
+}
+
